@@ -15,7 +15,7 @@
   description="application object"
   id="scala.templates.app"
   context="org.scala-ide.sdt.core.templates" enabled="true"
->object ${name} extends Application {
+>object ${name} extends App {
   ${line_selection}${cursor}
 }</template>
 <template name="arr"
@@ -108,7 +108,7 @@
   id="scala.templates.function"
   context="org.scala-ide.sdt.core.templates" enabled="true"
 >def ${name}(${}): ${Unit} = {
-  ${cursor}
+  ${line_selection}${cursor}
 }</template>
 <template name="lazy"
   description="lazy val"
